@@ -10,8 +10,8 @@
 
     $diasLaborales = 6;
     $diasDeDescanso = 4;
-    $mesIngreso = 7;
-    $diaIngreso = 12;
+    $mesIngreso = 9;
+    $diaIngreso = 9;
 
     $numeroDeDiaDeIngreso = date("z", mktime(0,0,0,$mesIngreso,$diaIngreso+1,date("y")));
 
@@ -26,7 +26,7 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>Calendario Laboral 2020</h1>
+        <h1>Calendario 2020</h1>
 
         <?php
         
@@ -37,7 +37,8 @@
         $aux = 0;
         $day = -1;
 
-        for($p = -1; $p < 5; $p++) {
+        // for($p = -7; $p < 5; $p++) {
+        for($p = -1; $p < 4; $p++) {
 
             $diasDespues = 1;
             $month = date("n") + $p;
