@@ -8,10 +8,10 @@
     $meses=array(1=>"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
     "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
 
-    $diasLaborales = 6;
-    $diasDeDescanso = 4;
+    $diasLaborales = 2;
+    $diasDeDescanso = 9;
     $mesIngreso = 9;
-    $diaIngreso = 9;
+    $diaIngreso = 1;
 
     $numeroDeDiaDeIngreso = date("z", mktime(0,0,0,$mesIngreso,$diaIngreso+1,date("y")));
 
